@@ -9,7 +9,13 @@
 </head>
 <body>
 
-	<!-- Bs4 cards -->
+	<!-- Bs4 collapse -->
+
+<button class="btn btn-primary" data-toggle="collapse" data-target="#bits">Show/Hide</button>
+<a href="#bits" data-toggle="collapse" class="btn btn-success">Show/Hide</a>
+
+
+<div class="collapse" id="bits">
 <div class="container pt-3">
 <div class="row">
 	<div class="col-md-4">
@@ -65,23 +71,48 @@
 	</div>
 </div>
 </div>
+</div>
 
 
 <!-- BS4 accordion -->
 <div class="container pt-3">
-	<div id="accordion">
-		<div class="list-group collapse">
-			<li id="list1" class="list-group-item" href="#list1">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	<div id="test">
+		
+		<div class="card">
+			<div class="card-header">
+				<h4 class="card-title">Click here
+					<span><a href="#card1" data-toggle="collapse">Accordion 1</a></span>
+				</h4>
+			</div>
+			<div class="card-body" id="card1" data-parent="#test" >
+				<p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</li>
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+			<div class="card">
+			<div class="card-header">
+				<h4 class="card-title">Click here
+					<span><a href="#card2" data-toggle="collapse">Accordion 1</a></span>
+				</h4>
+				
+			</div>
+			<div class="card-body" id="card2" data-parent="#test">
+				<p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
 		</div>
 	</div>
 </div>
+	
+
 	
 
 
